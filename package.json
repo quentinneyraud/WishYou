@@ -4,8 +4,8 @@
   "description": "Get started with React, Redux, and React-Router!",
   "main": "index.js",
   "scripts": {
-    "clean": "rm -rf dist",
-    "compile": "node -r dotenv/config --harmony bin/compile",
+    "clean": "rm -rf www/*",
+    "compile": "npm run clean && node -r dotenv/config --harmony bin/compile",
     "lint": "eslint . ./",
     "lint:fix": "npm run lint -- --fix",
     "start": "npm run dev",
