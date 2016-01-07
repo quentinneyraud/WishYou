@@ -3,6 +3,9 @@ import { syncReduxAndRouter } from 'redux-simple-router'
 import routes from './routes'
 import Root from './containers/Root'
 import configureStore from './redux/configureStore'
+import injectTapEventPlugin from 'react-tap-event-plugin';
+
+injectTapEventPlugin();
 
 const history = createHashHistory()
 const store = configureStore(window.__INITIAL_STATE__)
